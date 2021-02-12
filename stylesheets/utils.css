@@ -3,4 +3,13 @@
   --primary-white: #fff;
   --primary-blue: #007c89;
   --primary-black: #241c15;
+  --primary-grey: #403b3b;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100em;
+  margin: 0 auto;
 }
