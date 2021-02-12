@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: serif;
 }
 /* ************* */
 /* NAV           */
@@ -10,7 +11,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgb(255, 217, 30);
+  background-color: var(--primary-yellow);
   display: flex;
   align-items: center;
   padding: 10px 25px;
@@ -20,7 +21,7 @@ nav {
 }
 
 nav:hover {
-  background-color: white;
+  background-color: var(--primary-white);
 }
 
 .navbar-links {
@@ -44,7 +45,7 @@ nav:hover {
 .nav-link:hover,
 .nav-link:active,
 .nav-link:focus {
-  color: blue;
+  color: var(--primary-blue);
   border-bottom-style: underline;
 }
 
@@ -73,27 +74,92 @@ nav:hover {
 
 .nav-btn {
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin: 10px;
   cursor: pointer;
 }
 
-.nav-btn:first-child {
+#nav-search {
   border: none;
   background-color: inherit;
   font-size: 22px;
 }
 
-.nav-btn:last-child {
-  background-color: blue;
+#nav-login {
+  background-color: inherit;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#nav-login:hover,
+#nav-login:active,
+#nav-login:focus {
+  background-color: rgb(210, 210, 210);
+}
+
+#nav-sign-up {
+  background-color: var(--primary-blue);
   color: white;
   border: none;
 }
 
-.nav-btn:first-child:hover {
-  color: blue;
+#nav-sign-up:hover {
+  color: var(--primary-blue);
 }
 
 /* **************** */
 /* SIDE DRAWER MENU */
 /* **************** */
+
+/* **************** */
+/* HERO SECTION */
+/* **************** */
+.hero-section {
+  background-color: var(--primary-yellow);
+}
+
+.hero-section .container {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 10% 180px 50px 180px;
+}
+
+.hero-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hero-info-title {
+  font-size: 50px;
+  letter-spacing: -0.5px;
+}
+
+#hero-info-comment {
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.hero-info > div button {
+  background-color: var(--primary-blue);
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  color: var(--primary-white);
+}
+
+.hero-logo {
+  flex: 1;
+}
+
+.hero-logo > img {
+  width: 100%;
+  height: 100%;
+}
