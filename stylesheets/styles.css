@@ -365,3 +365,90 @@ nav:hover {
   text-decoration: none;
   color: var(--primary-blue);
 }
+
+/* ******************     */
+/* COMES TOGETHER SECTION */
+/* ******************     */
+.comes-together {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--primary-squash);
+  color: var(--primary-black);
+}
+
+.comes-together .section-title {
+  text-align: center;
+  font-size: 46px;
+  padding: 100px;
+}
+
+.comes-together .container {
+  flex-direction: column;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  margin: auto 160px 80px 160px;
+}
+
+.section-content-left {
+  box-sizing: border-box;
+  flex: 1;
+  color: var(--primary-grey);
+
+  margin-right: 10px;
+}
+
+.section-content-right {
+  box-sizing: border-box;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.section-content-right-title {
+  font-size: 30px;
+}
+
+.section-content-right-desc {
+  line-height: 22px;
+  color: var(--primary-grey);
+}
+
+.section-content-right > * {
+  padding: 15px;
+  margin: 25px auto;
+}
+
+.comes-together #section-action {
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 180px auto 180px;
+}
+
+#section-action > div:first-child {
+  text-align: center;
+  font-size: 52px;
+}
+
+#section-action > div:nth-child(2) {
+  color: var(--primary-grey);
+  margin: 30px 280px;
+  text-align: center;
+}
+
+#section-action > div:last-child {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  color: var(--primary-grey);
+}
+
+#section-action > button {
+  padding: 20px 25px;
+  font-size: 15px;
+  font-weight: 600;
+}
