@@ -182,9 +182,9 @@ nav:hover {
   text-align: center;
 }
 
-/* ************* */
+/* ******************** */
 /* YOUR BUSINESS SECTION*/
-/* ************* */
+/* ******************** */
 .your-business {
   padding: 40px 200px 50px 200px;
   color: var(--primary-white);
@@ -230,6 +230,7 @@ nav:hover {
 /* **************** */
 .help-you {
   width: 100%;
+  color: var(--primary-black);
 }
 
 .help-you .container {
@@ -240,7 +241,7 @@ nav:hover {
 .help-you .heading {
   flex: 1;
   width: 100%;
-  font-size: 42px;
+  font-size: 58px;
 }
 
 .help-context {
@@ -257,7 +258,7 @@ nav:hover {
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .help-context-right {
@@ -267,20 +268,20 @@ nav:hover {
 }
 
 .help-context-right > * {
-  margin: 10px;
+  margin: 15px;
 }
 
 .help-context-right > div:first-child {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .help-context-right > div {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .help-context-right > a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--primary-blue);
 }
