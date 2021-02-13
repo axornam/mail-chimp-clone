@@ -117,6 +117,7 @@ nav:hover {
 /* **************** */
 .hero-section {
   background-color: var(--primary-yellow);
+  color: var(--primary-black);
 }
 
 .hero-section .container {
