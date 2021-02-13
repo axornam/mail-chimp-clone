@@ -15,7 +15,7 @@ nav {
   background-color: var(--primary-yellow);
   display: flex;
   align-items: center;
-  padding: 10px 25px;
+  padding: 10px 15px;
   font-family: Helvetica;
   transition: all 0.1s ease-in;
   box-sizing: border-box;
@@ -100,7 +100,7 @@ nav:hover {
 
 #nav-sign-up {
   background-color: var(--primary-blue);
-  color: white;
+  color: var(--primary-white);
   border: none;
 }
 
@@ -121,24 +121,25 @@ nav:hover {
 }
 
 .hero-section .container {
-  padding: 10% 180px 50px 180px;
+  padding: 6% 215px 40px 215px;
 }
 
 .hero-info {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #hero-info-title {
-  font-size: 50px;
+  font-size: 42px;
   letter-spacing: -0.5px;
 }
 
 #hero-info-comment {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 0;
+  line-height: 32px;
 }
 
 .hero-info > div button {
@@ -146,7 +147,7 @@ nav:hover {
   border: none;
   font-weight: 600;
   font-size: 15px;
-  padding: 20px 40px;
+  padding: 15px 35px;
   cursor: pointer;
   transition: all 0.15s linear;
   color: var(--primary-white);
@@ -182,10 +183,10 @@ nav:hover {
 }
 
 /* ************* */
-/* DO IT SECTION */
+/* YOUR BUSINESS SECTION*/
 /* ************* */
 .your-business {
-  padding: 40px 180px 50px 180px;
+  padding: 40px 200px 50px 200px;
   color: var(--primary-white);
 }
 
@@ -222,4 +223,64 @@ nav:hover {
 .your-business #section2 {
   flex: 1;
   align-self: center;
+}
+
+/* **************** */
+/* WELL HELP YOU */
+/* **************** */
+.help-you {
+  width: 100%;
+}
+
+.help-you .container {
+  flex-direction: column;
+  padding: 40px 200px 50px 200px;
+}
+
+.help-you .heading {
+  flex: 1;
+  width: 100%;
+  font-size: 42px;
+}
+
+.help-context {
+  display: flex;
+  flex-direction: row;
+}
+
+.help-context > * {
+  margin: 35px auto;
+}
+
+.help-context-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.help-context-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.help-context-right > * {
+  margin: 10px;
+}
+
+.help-context-right > div:first-child {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.help-context-right > div {
+  font-size: 12px;
+}
+
+.help-context-right > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--primary-blue);
 }
