@@ -549,3 +549,32 @@ nav:hover {
   height: 100%;
   object-fit: contain;
 }
+
+/* ********************* */
+/* RECENT AWARDS SECTION */
+/* ********************* */
+.recent-awards {
+  background-color: var(--primary-ash);
+  width: 100%;
+}
+
+.recent-awards .container {
+  padding: 100px 180px 90px 180px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recent-awards .container > p {
+  font-weight: 400;
+  font-size: 52px;
+  color: var(--primary-black);
+  text-align: center;
+}
+
+.recent-awards .container > div {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 20px 30px;
+}
