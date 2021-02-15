@@ -6,10 +6,13 @@
   --primary-grey: #403b3b;
   --primary-ash: #f6f6f4;
   --primary-squash: #fbeeca;
+  --primary-pink: #fdece5;
+  --primary-light-blue: #e8f1fa;
 }
 
 a {
   text-decoration: none;
+  color: var(--primary-white);
   font-family: Arial, Helvetica, sans-serif;
 }
 
