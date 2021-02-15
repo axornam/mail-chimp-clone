@@ -823,3 +823,49 @@ nav:hover {
 .container-footer-right > div:last-child > div a {
   color: var(--primary-black);
 }
+
+/* ********************* */
+/* LET'S DO THIS SECTION */
+/* ********************* */
+.lets-do-this {
+  width: 100%;
+  background-color: var(--primary-yellow);
+  color: var(--primary-black);
+}
+
+.lets-do-this .container {
+  padding: 80px 200px 100px 200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.lets-do-this .container > h1 {
+  font-size: 68px;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  margin: 25px;
+}
+
+.lets-do-this .container > div:first-child {
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 30px;
+  width: 50%;
+}
+
+.lets-do-this .container > div > p {
+  padding-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.lets-do-this .container > div:last-child {
+  padding: 20px 40px;
+  font-size: 15px;
+  font-weight: 600;
+}
