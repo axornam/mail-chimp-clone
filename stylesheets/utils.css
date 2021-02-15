@@ -24,3 +24,9 @@
   background-color: var(--primary-blue);
   color: var(--primary-white);
 }
+
+.btn-light {
+  color: var(--primary-blue);
+  background-color: var(--primary-white);
+  border: 1px solid var(--primary-blue);
+}
