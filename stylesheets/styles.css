@@ -110,12 +110,12 @@ nav:hover {
   color: var(--primary-blue);
 }
 
-/* **************** */
-/* SIDE DRAWER MENU */
-/* **************** */
+/* ****************** */
+/* SIDE DRAWER MENU   */
+/* ****************** */
 
 /* **************** */
-/* HERO SECTION */
+/* HERO SECTION     */
 /* **************** */
 .hero-section {
   background-color: var(--primary-yellow);
@@ -188,9 +188,9 @@ nav:hover {
   text-align: center;
 }
 
-/* ******************** */
-/* YOUR BUSINESS SECTION*/
-/* ******************** */
+/* *********************** */
+/* YOUR BUSINESS SECTION   */
+/* *********************** */
 .your-business {
   padding: 40px 200px 50px 200px;
   color: var(--primary-white);
@@ -232,7 +232,7 @@ nav:hover {
 }
 
 /* **************** */
-/* WELL HELP YOU */
+/* WELL HELP YOU    */
 /* **************** */
 .help-you {
   width: 100%;
@@ -292,9 +292,9 @@ nav:hover {
   color: var(--primary-blue);
 }
 
-/* ******************* */
-/* GROW WITH MAILCHIMP */
-/* ******************* */
+/* ******************** */
+/* GROW WITH MAILCHIMP  */
+/* ******************** */
 .grow-with {
   display: flex;
   flex-direction: column;
@@ -373,9 +373,9 @@ nav:hover {
   color: var(--primary-blue);
 }
 
-/* ******************     */
+/* ********************** */
 /* COMES TOGETHER SECTION */
-/* ******************     */
+/* ********************** */
 .comes-together {
   width: 100%;
   display: flex;
@@ -868,4 +868,150 @@ nav:hover {
   padding: 20px 40px;
   font-size: 15px;
   font-weight: 600;
+}
+
+/* ******************** */
+/* ABOUT US SECTION     */
+/* ******************** */
+.about-us {
+  width: 100%;
+  background-color: var(--primary-ash);
+}
+
+.about-us .container {
+  padding: 100px 120px 100px 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-products-column {
+  display: flex;
+  flex: 3.5;
+  justify-content: space-around;
+}
+
+.information-column {
+  margin: 0 15px;
+}
+
+.information-column span {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 50px;
+}
+
+.information-column > ul {
+  list-style: none;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.information-column > ul a {
+  color: var(--primary-black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 32px;
+}
+
+.container-presentation-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-presentation-column > * {
+  margin: 25px auto;
+  width: 180px;
+}
+
+.container-presentation-column div p {
+  font-size: 12px;
+  color: var(--primary-black);
+  padding: 25px auto;
+  margin: 5px auto;
+  line-height: 1.5;
+}
+.container-presentation-column > div:first-child {
+  padding-bottom: 30px;
+}
+
+.container-presentation-column div div:first-child a {
+  color: var(--primary-blue);
+  font-weight: 300;
+}
+
+.container-presentation-column div div:last-child {
+  padding-top: 10px;
+}
+
+.container-presentation-column div div:last-child a {
+  color: var(--primary-black);
+  font-size: 13px;
+}
+
+/* ***************************** */
+/* DOWNLOADS AND SOCIALS SECTION */
+/* ***************************** */
+.downloads-and-social {
+  width: 100%;
+  background-color: var(--primary-ash);
+}
+
+.downloads-and-social .container {
+  padding: 80px 160px 100px 160px;
+  border-top: 1px solid var(--primary-grey);
+  justify-content: center;
+}
+
+.downloads-and-social .container > div {
+  flex: 1;
+  margin: auto 15px;
+}
+
+.ds__Socials {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.ds__Socials a {
+  display: inline;
+  flex: 1.5;
+}
+
+.ds__Socials img {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.downloads-and-social a {
+  color: var(--primary-blue);
+}
+
+.ds__Copyright .btn {
+  border-color: var(--primary-grey);
+  padding-right: 55px;
+  margin-left: 0;
+}
+
+.ds__Copyright .btn a {
+  color: var(--primary-black);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.ds__Copyright .copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary-black);
+  font-size: 10.5px;
+  padding-top: 30px;
+}
+
+.ds__Copyright .copyright a {
+  font-weight: 600;
+  color: black;
 }
