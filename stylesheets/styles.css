@@ -294,18 +294,20 @@ nav:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 25%;
+  padding: 80px 25%;
   z-index: 200;
 }
 
 .do-it-all > span:first-child {
-  font-size: 48px;
+  font-size: 54px;
   margin: 25px auto;
   text-align: center;
+  color: var(--primary-black);
 }
 
 .do-it-all > span:last-child {
   text-align: center;
+  color: var(--primary-grey);
 }
 
 /* *********************** */
@@ -337,6 +339,7 @@ nav:hover {
 }
 
 .your-business #section1 > div:first-child {
+  margin-bottom: 1.25rem;
   font-size: 28px;
 }
 
@@ -386,6 +389,8 @@ nav:hover {
   flex-direction: column;
   justify-content: center;
   font-size: 14px;
+  margin-left: 0;
+  color: var(--primary-grey);
 }
 
 .help-context-right {
@@ -408,7 +413,7 @@ nav:hover {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.35;
   font-size: 1em;
-  color: var(--primary-black);
+  color: var(--primary-grey);
 }
 
 .help-context-right > div {
@@ -1247,6 +1252,53 @@ nav:hover {
   .hero-logo {
     display: none;
   }
+
+  /* *********************** */
+  /* DO IT ALL SECTION       */
+  /* *********************** */
+  .do-it-all {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 68px;
+    padding-bottom: 5%;
+  }
+
+  .do-it-all > span:first-child {
+    font-size: 3.125rem;
+  }
+
+  /* ************************** */
+  /* YOUR BUSINESS SECTION      */
+  /* ************************** */
+  .your-business {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .your-business .container {
+    padding: 10px;
+  }
+
+  .your-business .container > * {
+    margin: 15px 7.5px;
+  }
+
+  .your-business #section1 > a {
+    margin-top: 7%;
+    margin-bottom: 10px;
+  }
+
+  .your-business #section2 {
+    display: none;
+  }
+
+  /* *************************** */
+  /* WE'LL HELP YOU SECTION      */
+  /* *************************** */
+  .help-you .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1256,5 +1308,42 @@ nav:hover {
   .hero-section .container {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  /* *********************** */
+  /* DO IT ALL SECTION       */
+  /* *********************** */
+  .do-it-all {
+    padding-top: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .do-it-all > span:first-child {
+    font-size: 40px;
+  }
+
+  /* ************************** */
+  /* YOUR BUSINESS SECTION      */
+  /* ************************** */
+  .your-business {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* *************************** */
+  /* WE'LL HELP YOU SECTION      */
+  /* *************************** */
+  .help-you .heading {
+    font-size: 40px;
+  }
+  .help-context {
+    flex-direction: column;
+  }
+
+  .help-context-right > * {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
