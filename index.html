@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="stylesheets/utils.css" />
     <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
   </head>
 
   <body>
     <!-- Nav -->
     <nav class="navbar">
+      <!-- Hamburger Button -->
+      <div class="nav-btn">
+        <button id='side-nav-btn'>
+          <div class="fas fa-bars fa-2x"></div>
+        </button>
+      </div>
       <!-- Links -->
       <div class="navbar-links">
         <ul>
@@ -24,9 +31,11 @@
       </div>
 
       <!-- Logo -->
-      <div class="navbar-brand">
-        <i class="fab fa-mailchimp"></i>
-        <span>mailchimp</span>
+      <div>
+        <div class="navbar-brand">
+          <i class="fab fa-mailchimp"></i>
+          <span>mailchimp</span>
+        </div>
       </div>
 
       <!-- Login -->
@@ -41,6 +50,45 @@
       </div>
     </nav>
     <!-- Side Drawer Menu -->
+    <div class="side-nav-drawer">
+      <div class="sn__Header_Buttons">
+        <span class="fas fa-arrow-left fa-lg"></span>
+        <span class="fas fa-search fa-lg"></span>
+      </div>
+      <!-- Main Side Menu -->
+      <div class="sn__Header_Items">
+        <a href="/" class="">Products</a>
+        <a href="/" class="">Resources</a>
+        <a href="/" class="">Inspiration</a>
+        <a href="/" class="">Pricing</a>
+      </div>
+      <div class="spacer"></div>
+      <div class="sn__Content_Info">
+        <p>Products Updates</p>
+        <p>
+          Get the latest on new features, product improvements, and other
+          announcements.
+        </p>
+        <a href="/" class="">See what's new</a>
+      </div>
+      <div>
+        <a href="/" class="lnk"></a>
+      </div>
+      <div class="sn__Auth container">
+        <div class="btn btn-light">
+          <a href="/">Login</a>
+        </div>
+        <div class="btn"><a href="/">Sign Up Free</a></div>
+      </div>
+      <!--  -->
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Products Side Menu -->
+    <!-- Resources Side Menu -->
+    <!-- Inpiration Side Menu -->
+    <!-- Pricing Side Menu  -->
 
     <!-- Hero -->
     <section class="hero-section">
