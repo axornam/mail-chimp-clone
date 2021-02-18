@@ -253,7 +253,7 @@ nav:hover {
 }
 
 #hero-info-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   letter-spacing: -0.5px;
   font-weight: 300;
 }
@@ -1202,6 +1202,9 @@ nav:hover {
 /* MEDIA QUERIES FOR MOBILE RESPONIVENESS                    */
 /* ********************************************************* */
 @media (max-width: 1099px) {
+  /* ******************* */
+  /* RESPONSIVE NAVBAR   */
+  /* ******************* */
   .navbar-links,
   #nav-sign-up {
     display: none;
@@ -1224,5 +1227,34 @@ nav:hover {
     height: 40px;
     width: 40px;
     border: 1px solid var(--primary-grey);
+  }
+
+  /* **************** */
+  /* HERO SECTION     */
+  /* **************** */
+  .hero-section .container {
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #hero-info-title,
+  #hero-info-comment {
+    margin: 15px auto;
+    text-align: left;
+  }
+
+  .hero-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* ********************** */
+  /* HERO SECTION           */
+  /* ********************** */
+  .hero-section .container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
