@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  z-index: 500;
-}
-
 /* ************* */
 /* NAV           */
 /* ************* */
@@ -24,7 +20,7 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 0.1s ease-in;
   box-sizing: border-box;
-  z-index: 500;
+  z-index: 600;
 }
 
 nav:hover {
@@ -130,7 +126,7 @@ nav:hover {
 .side-nav-drawer {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -535,16 +531,34 @@ nav:hover {
 
 .awards .container {
   padding: 90px 180px 40px 180px;
+  align-items: center;
 }
 
 .award-item {
+  width: 33.33333%;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
-  /* align-content: flex-end; */
-  text-align: center;
+  flex-direction: column;
   flex: 1;
+  align-items: stretch;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  text-align: center;
+}
+
+.award-item > a {
+  color: var(--primary-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.award-item > a div {
+  max-width: 10rem;
 }
 
 .award-item > * {
@@ -553,7 +567,17 @@ nav:hover {
 }
 
 .award-title {
-  font-size: 24px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--primary-black);
+}
+
+.award-description {
+  color: var(--primary-grey);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  flex-grow: 5;
+  margin-bottom: 30px;
 }
 
 .award-item div a {
@@ -572,13 +596,30 @@ nav:hover {
   box-sizing: border-box;
   background-color: var(--primary-squash);
   color: var(--primary-black);
-  z-index: 200;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.comes-together .section-title {
+  box-sizing: border-box;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.comes-together .section-title {
-  text-align: center;
-  font-size: 46px;
-  padding: 100px;
+.comes-together .section-title div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comes-together .section-title p {
+  text-align: center !important;
+  font-size: 3.375rem;
+  letter-spacing: -0.03125rem;
+  font-weight: 500;
 }
 
 .comes-together .container {
@@ -597,7 +638,6 @@ nav:hover {
   box-sizing: border-box;
   flex: 1;
   color: var(--primary-grey);
-
   margin-right: 10px;
 }
 
@@ -1358,6 +1398,41 @@ nav:hover {
   .forward div {
     font-size: 3.125rem;
   }
+
+  /* ***************** */
+  /* AWARDS SECTION    */
+  /* ***************** */
+  .awards .container {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  /* ********************** */
+  /* COMES TOGETHER SECTION */
+  /* ********************** */
+
+  .comes-together .section-title div {
+    width: 100%;
+  }
+
+  .comes-together .section-title p {
+    font-size: 3.125rem;
+  }
+
+  .comes-together .section-content {
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-content-left {
+    padding: 15px;
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1452,5 +1527,39 @@ nav:hover {
   /* *************************** */
   .forward div {
     font-size: 2.5rem;
+  }
+
+  /* ***************** */
+  /* AWARDS SECTION    */
+  /* ***************** */
+  .awards .container {
+    flex-direction: column;
+  }
+
+  .award-item {
+    width: 100%;
+  }
+
+  /* .award-item > a div {
+    width: 33.333%;
+  } */
+
+  /* ********************** */
+  /* COMES TOGETHER SECTION */
+  /* ********************** */
+  .comes-together {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .comes-together .section-title p {
+    font-size: 2.25rem;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .comes-together .section-content {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
