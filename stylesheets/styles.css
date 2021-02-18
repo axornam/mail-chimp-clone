@@ -667,20 +667,33 @@ nav:hover {
   padding: 80px 180px auto 180px;
 }
 
-#section-action > div:first-child {
+#section-action .section-title {
+  font-size: 3.375rem;
   text-align: center;
-  font-size: 52px;
+  padding-bottom: 0rem;
+  letter-spacing: 0.03125rem;
 }
 
-#section-action > div:nth-child(2) {
+#section-action .section-title div {
+  width: 60%;
+}
+
+#section-action .section-description {
   color: var(--primary-grey);
-  margin: 30px 280px;
+  font-size: 1em;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
   text-align: center;
+  width: 45%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
 }
 
 #section-action > div:last-child {
   margin-top: 100px;
   margin-bottom: 60px;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--primary-grey);
 }
 
@@ -1433,6 +1446,23 @@ nav:hover {
     padding: 15px;
     margin-left: 10px;
   }
+
+  /* SECTION ACTION SECTION */
+  #section-action .section-title {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.125rem;
+  }
+
+  #section-action .section-title div {
+    width: 75%;
+  }
+
+  #section-action .section-description {
+    width: 70%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1561,5 +1591,18 @@ nav:hover {
   .comes-together .section-content {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  /* SECTION ACTION SECTION */
+  #section-action .section-title {
+    font-size: 2.5rem;
+  }
+
+  #section-action .section-title div {
+    width: 100%;
+  }
+
+  #section-action .section-description {
+    width: 90%;
   }
 }
