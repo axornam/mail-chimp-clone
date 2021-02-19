@@ -51,29 +51,119 @@
     </nav>
     <!-- Side Drawer Menu -->
     <div class="side-nav-drawer">
-      <div class="sn__Header_Buttons">
-        <span class="fas fa-arrow-left fa-lg"></span>
-        <span class="fas fa-search fa-lg"></span>
+      <!-- Main Side Nav Content -->
+      <div id="main-nav-content" class="sn__Content" style="display: none">
+        <div class="sn__Header_Buttons">
+          <span class="sn__Back_Btn fas fa-arrow-left fa-lg"></span>
+          <span class="fas fa-search fa-lg"></span>
+        </div>
+        <!-- Main Side Menu -->
+        <div class="sn__Header_Items">
+          <button class="sn__HI_Buttons">Products</button>
+          <button class="sn__HI_Buttons">Resources</button>
+          <button class="sn__HI_Buttons">Inspiration</button>
+          <button class="sn__HI_Buttons">Pricing</button>
+        </div>
+        <div class="spacer"></div>
+        <div class="sn__Content_Info">
+          <p>Products Updates</p>
+          <p>
+            Get the latest on new features, product improvements, and other
+            announcements.
+          </p>
+          <a href="/" class="">See what's new</a>
+        </div>
       </div>
-      <!-- Main Side Menu -->
-      <div class="sn__Header_Items">
-        <a href="/" class="">Products</a>
-        <a href="/" class="">Resources</a>
-        <a href="/" class="">Inspiration</a>
-        <a href="/" class="">Pricing</a>
+      <!-- Products Side Nav Content -->
+      <div id="products-nav-content" class="sn__Content" style="display: none;">
+        <div class="sn__Header_Buttons">
+          <span class="sn__Back_Btn">
+            <span class="fas fa-arrow-left"></span>
+            <span>Main Menu</span>
+          </span>
+          <span class="fas fa-search fa-lg"></span>
+        </div>
+        <div class="sn__Link_Items">
+          <p>WE'LL HELP YOU —</p>
+          <a href="/" class="">Get Your Business Online</a>
+          <a href="/" class="">Market Your Busines</a>
+          <hr />
+          <p>PLATFORM FEATURES —</p>
+          <a href="/" class="">Audience Management </a>
+          <a href="/" class="">Creative Tools</a>
+          <a href="/" class="">Marketing Automations</a>
+          <a href="/" class="">Insights & Analytics</a>
+          <hr />
+          <p>NOT SURE WHERE TO START? —</p>
+          <a href="/" class="">What's Right for Me?</a>
+        </div>
+        <div class="spacer"></div>
+        <div class="sn__Content_Info">
+          <p>Products Updates</p>
+          <p>
+            Get the latest on new features, product improvements, and other
+            announcements.
+          </p>
+          <a href="/" class="">See what's new</a>
+        </div>
       </div>
-      <div class="spacer"></div>
-      <div class="sn__Content_Info">
-        <p>Products Updates</p>
-        <p>
-          Get the latest on new features, product improvements, and other
-          announcements.
-        </p>
-        <a href="/" class="">See what's new</a>
+      <!-- Resources Side Menu -->
+      <div id="resources-nav-content" class="sn__Content" style="display: none;">
+        <div class="sn__Header_Buttons">
+          <span class="sn__Back_Btn">
+            <span class="fas fa-arrow-left"></span>
+            <span>Main Menu</span>
+          </span>
+          <span class="fas fa-search fa-lg"></span>
+        </div>
+        <div class="sn__Link_Items">
+          <p>LEARN —</p>
+          <a href="/" class="">Mailchimp 101</a>
+          <a href="/" class="">Guides & Tutorials</a>
+          <a href="/" class="">Marketing Tips</a>
+          <a href="/" class="">Case Studies</a>
+          <hr />
+          <p>COMMUNITY —</p>
+          <a href="/" class="">For Freelancers & Agencies </a>
+          <a href="/" class="">For Developers</a>
+          <a href="/" class="">Hire a trusted partner</a>
+
+        </div>
+        <div class="spacer"></div>
+        <div class="sn__Content_Info">
+          <p>App Integrations</p>
+          <p>
+            Connect your digital tools so you can do more with your marketing.
+          </p>
+          <a href="/" class="">See All Integrations</a>
+        </div>
       </div>
-      <div>
-        <a href="/" class="lnk"></a>
+      <!-- Inpiration Side Menu -->
+      <div id="inspiration-nav-content" class="sn__Content">
+        <div class="sn__Header_Buttons">
+          <span class="sn__Back_Btn">
+            <span class="fas fa-arrow-left"></span>
+            <span>Main Menu</span>
+          </span>
+          <span class="fas fa-search fa-lg"></span>
+        </div>
+        <div class="sn__Header_Items">
+          <button class="in__HI_Buttons">Mailchimp Presents</button>
+          <button class="in__HI_Buttons">Podcasts</button>
+          <button class="in__HI_Buttons">Series</button>
+          <button class="in__HI_Buttons">Films</button>
+        </div>
+        <hr>
+        <div class="sn__Header_Items">
+          <button class="in__HI_Buttons">Courier</button>
+          <button class="in__HI_Buttons">Expert Insights</button>
+          <button class="in__HI_Buttons">Industry Trends</button>
+          <button class="in__HI_Buttons">Smart Living</button>
+        </div>
+        <div class="spacer"></div>
+
       </div>
+      <!--  -->
       <div class="sn__Auth container">
         <div class="btn btn-light">
           <a href="/">Login</a>
@@ -84,11 +174,6 @@
     </div>
     <!-- Overlay -->
     <div class="overlay"></div>
-
-    <!-- Products Side Menu -->
-    <!-- Resources Side Menu -->
-    <!-- Inpiration Side Menu -->
-    <!-- Pricing Side Menu  -->
 
     <!-- Hero -->
     <section class="hero-section">
@@ -111,7 +196,8 @@
 
     <!--  -->
     <section class="do-it-all">
-      <span>Do it all with Mailchimp</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+      <span>Do it all with Mailchimp</span>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
         impedit tempore accusantium, consequuntur distinctio sunt a
         necessitatibus perspiciatis.</span>
     </section>
@@ -595,7 +681,7 @@
         <div class="container-presentation-column">
           <!--  -->
           <div>
-            <div class='section-title'>
+            <div class="section-title">
               <a href="/"> <img src="/" alt="MailChimp Presents" /></a>
             </div>
             <p>
@@ -606,7 +692,7 @@
           </div>
           <!--  -->
           <div>
-            <div class='section-title'>
+            <div class="section-title">
               <a href="/"> <img src="/" alt="Courier" /></a>
             </div>
             <p>
@@ -638,7 +724,6 @@
         <!--  -->
         <div class="ds__Copyright">
           <div>
-
             <span class="btn btn-light">
               <a href="/">English</a>
             </span>

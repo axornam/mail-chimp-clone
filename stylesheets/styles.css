@@ -120,27 +120,13 @@ nav:hover {
   color: var(--primary-blue);
 }
 
-/* ****************** */
-/* SIDE DRAWER MENU   */
-/* ****************** */
-.side-nav-drawer {
+/* ******************       */
+/* MAIN SIDE DRAWER MENU    */
+/* ******************       */
+.sn__Content {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  max-width: calc(100vw - 3.75rem);
-  width: 26.25rem;
-  padding-top: auto;
-  background-color: var(--primary-white);
-  z-index: 700;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: translateX(-100%);
-  transition: all 0.2s linear;
+  flex: 1;
 }
 
 .sn__Header_Buttons {
@@ -148,11 +134,12 @@ nav:hover {
   justify-content: space-between;
   height: 66px;
   align-items: center;
-  color: var(--primary-grey);
+  padding: 0 10px 10px 10px;
 }
 
 .sn__Header_Buttons > span {
   cursor: pointer;
+  color: var(--primary-darkest-ash);
   transition: all 0.1s linear;
 }
 
@@ -160,12 +147,19 @@ nav:hover {
   color: var(--primary-blue);
 }
 
+.sn__Header_Buttons > span > span:last-child {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
 .sn__Header_Items {
   display: flex;
   flex-direction: column;
 }
 
-.sn__Header_Items > a {
+.sn__Header_Items > button {
   padding: 12px 10px;
   font-weight: 300;
   width: 100%;
@@ -173,10 +167,12 @@ nav:hover {
   background-color: inherit;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
+  border: none;
+  cursor: pointer;
   color: var(--primary-black);
 }
 
-.sn__Header_Items > a:hover {
+.sn__Header_Items > button:hover {
   color: var(--primary-blue);
 }
 
@@ -226,6 +222,21 @@ nav:hover {
 
 .sn__Auth > div:first-child:hover {
   background-color: var(--primary-ash);
+}
+
+/* *********************    */
+/* INSPIRATION SIDE NAV     */
+/* *********************    */
+#inspiration-nav-content .sn__Header_Items > button:first-child {
+  color: var(--primary-blue);
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 35px auto;
+}
+
+#inspiration-nav-content .sn__Header_Items > button:last-child {
+  padding-bottom: 50px;
 }
 
 /* **************** */
