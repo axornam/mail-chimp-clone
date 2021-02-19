@@ -1259,16 +1259,16 @@ nav:hover {
   color: var(--primary-blue);
 }
 
+.ds__Downloads,
 .ds__Socials,
-.ds__Copyright,
-.ds__Downloads {
+.ds__Copyright {
   flex: 1;
   margin-left: 15px;
   margin-right: 15px;
+  display: flex;
 }
 
 .ds__Downloads {
-  display: flex;
   text-align: center;
 }
 
@@ -1279,19 +1279,15 @@ nav:hover {
 .ds__Downloads a img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .ds__Socials {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap !important;
   box-sizing: border-box;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
   line-height: 1.35;
-  padding: 0;
-  margin: 0;
 }
 
 .ds__Socials a {
@@ -1312,7 +1308,6 @@ nav:hover {
 
 .ds__Copyright {
   box-sizing: border-box;
-  display: flex;
   flex-direction: column;
   margin-left: 0;
   margin-right: 0;
@@ -1635,6 +1630,19 @@ nav:hover {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
+    align-items: center;
+  }
+
+  .ds__Downloads {
+    flex-direction: column;
+  }
+
+  .ds__Socials {
+    flex: 3;
+  }
+
+  .ds__Copyright {
+    flex: 2;
   }
 }
 
