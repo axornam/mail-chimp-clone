@@ -235,6 +235,10 @@ nav:hover {
   padding: 35px auto;
 }
 
+#inspiration-nav-content .sn__Header_Items > button:first-child:hover {
+  color: var(--primary-dark-blue);
+}
+
 #inspiration-nav-content .sn__Header_Items > button:last-child {
   padding-bottom: 50px;
 }
