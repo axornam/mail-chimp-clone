@@ -1158,24 +1158,25 @@ nav:hover {
 /* ******************** */
 .about-us {
   width: 100%;
-  background-color: var(--primary-ash);
-  z-index: 200;
+  background-color: var(--primary-ash-darker);
 }
 
 .about-us .container {
   padding: 100px 120px 100px 120px;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container-products-column {
   display: flex;
-  flex: 3.5;
-  justify-content: space-around;
+  flex: 5;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .information-column {
-  margin: 0 15px;
+  /* margin: 0 15px; */
+  margin-bottom: 25px;
 }
 
 .information-column span {
@@ -1205,15 +1206,15 @@ nav:hover {
 
 .container-presentation-column {
   flex: 1;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .container-presentation-column > * {
-  margin: 25px auto;
-  width: 180px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .container-presentation-column div p {
@@ -1246,14 +1247,12 @@ nav:hover {
 /* ***************************** */
 .downloads-and-social {
   width: 100%;
-  background-color: var(--primary-ash);
-  z-index: 200;
+  background-color: var(--primary-ash-darker);
 }
 
 .downloads-and-social .container {
   padding: 80px 160px 100px 160px;
-  border-top: 1px solid var(--primary-grey);
-  /* height: 250px; */
+  border-top: 1px solid var(--primary-dark-ash);
 }
 
 .downloads-and-social a {
@@ -1309,6 +1308,14 @@ nav:hover {
   left: 0;
   right: 0;
   object-fit: cover;
+}
+
+.ds__Copyright {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .ds__Copyright .btn {
@@ -1606,6 +1613,29 @@ nav:hover {
   .lets-do-this .container > div > p {
     font-size: 1.75rem;
   }
+
+  /* ******************** */
+  /* ABOUT US SECTION     */
+  /* ******************** */
+  .about-us .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .information-column {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* ***************************** */
+  /* DOWNLOADS AND SOCIALS SECTION */
+  /* ***************************** */
+  .downloads-and-social .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1812,5 +1842,37 @@ nav:hover {
 
   .lets-do-this .container > div > p {
     font-size: 1.25rem;
+  }
+
+  /* ******************** */
+  /* ABOUT US SECTION     */
+  /* ******************** */
+  .about-us .container {
+    flex-direction: column;
+  }
+
+  .information-column {
+    margin-bottom: 25px;
+  }
+
+  .container-presentation-column {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* ***************************** */
+  /* DOWNLOADS AND SOCIALS SECTION */
+  /* ***************************** */
+  .downloads-and-social .container {
+    flex-direction: column;
+  }
+
+  .ds__Socials {
+    padding-bottom: 40px;
+  }
+
+  .ds__Copyright {
+    margin: auto 20px;
+    align-items: center;
   }
 }
