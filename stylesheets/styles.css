@@ -294,7 +294,7 @@ nav:hover {
 .hero-logo > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* ************* */
@@ -330,12 +330,7 @@ nav:hover {
 }
 
 .your-business .container {
-  padding: 48px;
   background-color: var(--primary-grey);
-}
-
-.your-business .container > * {
-  margin: 20px 15px;
 }
 
 .your-business #section1 {
@@ -343,6 +338,8 @@ nav:hover {
   flex: 1;
   flex-direction: column;
   align-items: space-between;
+  padding: 48px;
+  box-sizing: border-box;
 }
 
 .your-business #section1 > * {
@@ -361,8 +358,14 @@ nav:hover {
 }
 
 .your-business #section2 {
+  box-sizing: border-box;
   flex: 1;
   align-self: center;
+}
+
+.your-business #section2 img {
+  width: 100%;
+  height: 100%;
 }
 
 /* **************** */
@@ -1285,10 +1288,14 @@ nav:hover {
 
 .ds__Downloads {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  box-sizing: border-box;
 }
 
 .ds__Downloads a {
-  margin: 25px;
+  /* margin: 25px; */
 }
 
 .ds__Downloads a img {
@@ -1301,7 +1308,7 @@ nav:hover {
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   line-height: 1.35;
 }
 
@@ -1403,10 +1410,6 @@ nav:hover {
     text-align: left;
   }
 
-  .hero-logo {
-    display: none;
-  }
-
   /* *********************** */
   /* DO IT ALL SECTION       */
   /* *********************** */
@@ -1430,20 +1433,16 @@ nav:hover {
   }
 
   .your-business .container {
+    flex-direction: column-reverse;
     padding: 10px;
   }
 
-  .your-business .container > * {
-    margin: 15px 7.5px;
-  }
-
-  .your-business #section1 > a {
+  .your-business .container #section1 > a {
     margin-top: 7%;
     margin-bottom: 10px;
   }
 
-  .your-business #section2 {
-    display: none;
+  .your-business .container #section2 {
   }
 
   /* *************************** */
