@@ -2,8 +2,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
   console.log("Loaded");
 
   const navBar = document.querySelector(".navbar");
-  const mainSideNav = document.querySelector(".side-nav-drawer");
+  const sideBar = document.querySelector(".side-nav-drawer");
   const mainSideNavButtons = document.querySelectorAll(".sn__HI_Buttons");
+
+  // Side Nav contents
+  const sideNavContents = document.querySelectorAll(".sn__Content");
   const mainNavContent = document.querySelector("#main-nav-content");
   const productsNavContent = document.querySelector("#products-nav-content");
   const resourcesNavContent = document.querySelector("#resources-nav-content");
@@ -13,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   const overlay = document.querySelector(".overlay");
   const navButton = document.getElementById("side-nav-btn");
-  const mainSideNavBackButton = document.querySelectorAll(".sn__Back_Btn");
+  const sideNavHomeButtons = document.querySelectorAll(".sn__Back_Btn");
 
   const showHideMainSideNav = () => {
     // show - hide the side drawer
-    mainSideNav.classList.toggle("show-hide-nav");
+    sideBar.classList.toggle("show-hide-nav");
 
     // show - hide the overlay
-    if (mainSideNav.classList.contains("show-hide-nav")) {
+    if (sideBar.classList.contains("show-hide-nav")) {
       overlay.style.transform = "translateX(0)";
     } else {
       overlay.style.transform = "translateX(-100%)";
@@ -28,10 +31,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
   };
 
   const showSideMenu = (body) => {
-    mainSideNav.querySelector(".sn__Content").innerHTML = body.innerHTML;
     // console.log(body.innerHTML);
+    //  fade out and set display property of current div to none;
+    sideNavContents.forEach((item) => (item.style.display = "none"));
+
+    //  fade in and set display property to block - flex
+    body.style.display = "flex";
   };
 
+  // CHANGE COLOR OF THE NAVBAR ON MOUSE ENTER AND ON SCROLL DOWN
   navBar.addEventListener(
     "mouseenter",
     () => (navBar.style.backgroundColor = "#fff")
@@ -42,11 +50,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // ADD OVERLAY EVENT LISTENER
   overlay.addEventListener("click", showHideMainSideNav);
-  mainSideNavBackButton.forEach((nodeItem) =>
-    nodeItem.addEventListener("click", showHideMainSideNav)
+
+  // ADD EVENT LISTENER TO SIDE NAV BACK BUTTONS
+  sideNavHomeButtons.forEach((nodeItem) =>
+    nodeItem.addEventListener("click", () => {
+      showSideMenu(mainNavContent);
+    })
   );
 
-  // ADD EVENT LISTENERST TO MAIN SIDE NAV BUTTONS
+  // ADD EVENT LISTENER TO MAIN SIDE NAV BUTTONS
   mainSideNavButtons.forEach((nodeItem) =>
     nodeItem.addEventListener("click", () => {
       if (nodeItem.innerText === "Pricing") {
