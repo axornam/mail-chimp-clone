@@ -488,8 +488,8 @@ nav:hover {
 .grow-brands {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
+  width: 60%;
+  justify-content: space-between;
   align-items: center;
   margin-left: 0;
   margin-right: 0;
@@ -1472,9 +1472,6 @@ nav:hover {
     margin-bottom: 10px;
   }
 
-  .your-business .container #section2 {
-  }
-
   /* *************************** */
   /* WE'LL HELP YOU SECTION      */
   /* *************************** */
@@ -1486,7 +1483,9 @@ nav:hover {
   /* *************************** */
   /* GROW WITH MAILCHIMP SECTION */
   /* *************************** */
-
+  .grow-brands {
+    width: 70%;
+  }
   /* *************************** */
   /* PUSH FORWARD SECTION        */
   /* *************************** */
