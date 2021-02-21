@@ -122,15 +122,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
   };
 
   // Change color of navbar when mouse is hovered
-  navBar.addEventListener(
-    "mouseenter",
-    () => (navBar.style.backgroundColor = "#fff")
-  );
+  navBar.addEventListener("mouseenter", () => {
+    if (window.scrollY === 0) {
+      navBar.style.backgroundColor = "#fff";
+    }
+  });
 
-  navBar.addEventListener(
-    "mouseleave",
-    () => (navBar.style.backgroundColor = "#ffe01b")
-  );
+  navBar.addEventListener("mouseleave", () => {
+    if (window.scrollY === 0) {
+      navBar.style.backgroundColor = "#ffe01b";
+    }
+  });
 
   // Change color of navbar when page is scrolled
   window.addEventListener("scroll", changeNavOnScoll);
