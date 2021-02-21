@@ -26,6 +26,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const overlay = document.querySelector(".overlay");
   const sideNavHomeButtons = document.querySelectorAll(".sn__Back_Btn");
 
+  // **************************************
+  // FUNCTION BODIES
+  // **************************************
+
+  const changeNavOnScoll = () => {
+    // console.log("Scroll TOP Value: " + window.scrollY);
+    if (window.scrollY === 0) {
+      navBar.style.backgroundColor = "#ffe01b";
+    } else if (window.scrollY > 60) {
+      navBar.style.backgroundColor = "#fff";
+    }
+  };
   /* 
     SET UP OR DISMISSING OVERLAY ON HOVER EVENT
     PROCESS WORKS IN THREE PARTS
@@ -119,6 +131,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     "mouseleave",
     () => (navBar.style.backgroundColor = "#ffe01b")
   );
+
+  // Change color of navbar when page is scrolled
+  window.addEventListener("scroll", changeNavOnScoll);
 
   // Add Event listener to show Side Bar when nav
   // Button is Clicked
