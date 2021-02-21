@@ -70,8 +70,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // show - hide the overlay
     if (sideBar.classList.contains("show-hide-nav")) {
       overlay.style.transform = "translateX(0)";
+      document.body.style.overflowY = "hidden";
     } else {
       overlay.style.transform = "translateX(-100%)";
+      document.body.style.overflowY = "auto";
     }
   };
 
