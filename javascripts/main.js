@@ -1,14 +1,18 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("Loaded");
 
+  // *****************************
   // Nav bar Links and Items
+  // *****************************
   const navLinks = document.querySelectorAll(".nav-link");
   const navBar = document.querySelector(".navbar");
   const sideBar = document.querySelector(".side-nav-drawer");
   const mainSideNavButtons = document.querySelectorAll(".sn__HI_Buttons");
   const homeNavBackBtn = document.getElementById("home-nav-back-btn");
 
+  // *****************************
   // Side Nav contents
+  // *****************************
   const sideNavContents = document.querySelectorAll(".sn__Content");
   const mainNavContent = document.querySelector("#main-nav-content");
   const productsNavContent = document.querySelector("#products-nav-content");
@@ -22,9 +26,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const overlay = document.querySelector(".overlay");
   const sideNavHomeButtons = document.querySelectorAll(".sn__Back_Btn");
 
-  // **********************************
-  // FUNCTION DEFINITIONS
-  // **********************************
+  /* 
+    SET UP OR DISMISSING OVERLAY ON HOVER EVENT
+    PROCESS WORKS IN THREE PARTS
+    1. When Overlay is displaying as a result of link hovering
+      1.1 remove event listener for mouse enter on animation end
+      
+    2. When Overlay is done displaying - transition from left to right
+      2.1 add event listener for mouse enter as the animation starts
+
+    3. Dismiss overlay when mouse enter is triggered
+  */
   const addHoverListener = () => {
     overlay.addEventListener("mouseenter", showHideMainSideNav);
   };
@@ -33,6 +45,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     overlay.removeEventListener("mouseenter", showHideMainSideNav);
   };
 
+  /* 
+    SET UP FOR SHOW / HIDE SIDE 
+    1. toggle show-hide class when navbutton in clicked
+    2. check whether side classlist contains show-hide class
+    3. display / dismiss the overlay when appropriate
+  */
   const showHideMainSideNav = () => {
     // show - hide the side drawer
     sideBar.classList.toggle("show-hide-nav");
@@ -46,8 +64,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   };
 
   const showSideMenu = (body) => {
-    // console.log(body.innerHTML);
-
     // **************************************
     // prepare side menu item for mobile
     // **************************************
@@ -63,11 +79,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       // show header buttons
       body.querySelector(".sn__Header_Buttons").style.display = "flex";
-
+    } else {
       // **************************************
       // prepare side menu item for desktop
       // **************************************
-    } else {
       console.log("Desktop Display");
       // add hover event listener to overlay
       // remove event listener when animation starts
