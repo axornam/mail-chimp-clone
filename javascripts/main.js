@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // **************************************
     // prepare side menu item for mobile
     // **************************************
-    if (parseInt(window.screen.width) <= 1099) {
+    if (parseInt(window.screen.width) < 1100) {
       console.log("Mobile Display");
       // remove hover event listener to overlay
       overlay.removeEventListener("mouseenter", showHideMainSideNav);
@@ -76,6 +76,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       // show auth box
       sideNavAuth.style.display = "flex";
+
+      // reset top padding
+      body.style.paddingTop = "0";
 
       // show header buttons
       body.querySelector(".sn__Header_Buttons").style.display = "flex";
@@ -119,7 +122,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Add Event listener to show Side Bar when nav
   // Button is Clicked
-  navButton.addEventListener("click", showHideMainSideNav);
+  navButton.addEventListener("click", () => {
+    showHideMainSideNav();
+    showSideMenu(mainNavContent);
+  });
 
   // Add Event listener to dismiss Side Bar
   // When Back Arrow is Clicked
@@ -163,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       // Hide Side Bar when Mouse Leaves link Items
       nodeItem.addEventListener("mouseout", () => {
         if (nodeItem.innerText === "Pricing") {
+          return;
         } else {
           showHideMainSideNav();
         }
@@ -174,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   mainSideNavButtons.forEach((nodeItem) =>
     nodeItem.addEventListener("click", () => {
       if (nodeItem.innerText === "Pricing") {
+        return;
       } else if (nodeItem.innerText === "Inspiration") {
         showSideMenu(inspirationNavContent);
       } else if (nodeItem.innerText === "Resources") {
